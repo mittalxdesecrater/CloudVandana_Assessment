@@ -1,5 +1,12 @@
-let str="This is a sunny day";
+const str="This is a sunny day";
 
-for(let i=0;i>length.str;i++){
-    
+function reverseSentence(sentence){
+    const words=sentence.split(' ');
+
+    const reverseWords =words.map(word=>{
+        return word.split('').reverse().join('');
+    });
+
+    return reverseWords.join(' ');
 }
+console.log(reverseSentence(str));
