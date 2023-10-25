@@ -1,13 +1,3 @@
-// function getSelectedFields() {
-//     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-//     const selectedFields = Array.from(checkboxes)
-//         .filter(checkbox => checkbox.checked)
-//         .map(checkbox => checkbox.value);
-
-//     if (selectedFields.length <= 0 && document.querySelectorAll('input') ) {
-//         alert("Please fill in all the required fields.");
-//     } 
-// }
 
 function validateAndSubmit() {
     const firstName = document.getElementById('firstName').value;
@@ -60,6 +50,5 @@ function resetForm() {
 
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
-    // document.getElementsByClassName('forms').reset();
 }
 
